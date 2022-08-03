@@ -19,8 +19,8 @@ export default function Home({ data }) {
 }
 
 export async function getServerSideProps(context) {
-  const pageData = await getPage()
+  const data = await getPage()
   return {
-    props: { data:pageData }, // will be passed to the page component as props
+    props: { data }, // will be passed to the page component as props
   }
 }
