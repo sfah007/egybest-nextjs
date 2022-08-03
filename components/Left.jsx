@@ -30,8 +30,8 @@ export default function Left() {
             </div >
             <div className='mt-3 grid grid-cols-2 gap-3'>
                 {links?.map((v, i) => {
-                    return (<Link href={url + "/" + v.path} key={i}>
-                        <a href={url + "/" + v.path} className='rounded-md w-full block text-center hover:text-white hover:bg-red-500  p-2 text-red-500 bg-white text-[0.9rem]'>
+                    return (<Link href={"/" + v.path} key={i}>
+                        <a href={"/" + v.path} className='rounded-md w-full block text-center hover:text-white hover:bg-red-500  p-2 text-red-500 bg-white text-[0.9rem]'>
                             {v.text}
                         </a>
                     </Link>)
