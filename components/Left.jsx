@@ -6,7 +6,6 @@ import { FaFacebookSquare, FaTwitterSquare } from "react-icons/fa"
 
 export default function Left() {
     const [links, setLinks] = useState([])
-    const url = process.env.NEXT_PUBLIC_MY_URL
     useEffect(() => {
         const getLinks = async () => {
             const { data } = await axios.get(`/api/links`)
