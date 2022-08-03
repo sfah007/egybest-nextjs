@@ -24,7 +24,7 @@ function SearchBar() {
         const getMovies = async () => {
             if (!query.trim()) return
             const url = process.env.NEXT_PUBLIC_MY_URL;
-            const { data } = await axios.get(`${url}/api/autoComplete?q=${query}`)
+            const { data } = await axios.get(`/api/autoComplete?q=${query}`)
             setMovies(data)
         }
         getMovies()
