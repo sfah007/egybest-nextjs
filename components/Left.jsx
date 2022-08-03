@@ -9,7 +9,7 @@ export default function Left() {
     const url = process.env.NEXT_PUBLIC_MY_URL
     useEffect(() => {
         const getLinks = async () => {
-            const { data } = await axios.get(`${process.env.NEXT_PUBLIC_MY_URL}/api/links`)
+            const { data } = await axios.get(`/api/links`)
             setLinks(data)
         }
 
